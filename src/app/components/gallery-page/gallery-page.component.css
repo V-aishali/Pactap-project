@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+}
+
+.galleryWrapper {
+    text-align: center;
+}
+
+.galleryInner {
+    text-align: center;
+    padding: 35px 20px 0px;
+}
+
+.galleryInner span {
+    background-color: #faa71b;
+    width: 50px;
+    height: 4px;
+    display: block;
+    border-radius: 1px;
+    max-width: 50px;
+    margin: 0 auto 25px;
+}
+
+.galleryInner h1 {
+    color: black;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.galleryInner p {
+    color: #828282;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.gallerySection {
+    padding: 20px;
+}
+
+.filledButton {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #faa71b;
+    border: 2px solid #faa71b;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    max-width: 140px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+}

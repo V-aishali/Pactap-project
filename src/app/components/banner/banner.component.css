@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+}
+
+.bannerWrapper{
+    position: relative;
+}
+
+.bannerWrapper img {
+    width: 100%;
+}
+
+.bannerContent {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    text-align: center;
+    display: grid;
+    gap: 10px;
+}
+
+.bannerContent h1 {
+    color: #fff;
+    font-size: 55px;
+
+}
+
+.bannerContent strong {
+    color: #faa71b;
+}
+
+.bannerContent p {
+    color: #fff;
+    font-size: 13px;
+}

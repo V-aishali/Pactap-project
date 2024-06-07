@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+}
+
+.headerWrapper {
+    position: absolute;
+    top: 6%;
+    width: 100%;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.headerLogo {
+  display: flex;
+  align-items: center;
+}
+
+.headerToolbar {
+    background-color: transparent;
+    padding: 0px 50px;
+    /* position: fixed; */
+    z-index: 1;
+}
+
+.headerTabList {
+    display: flex;
+    gap: 10px;
+}
+.headerTabList a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+

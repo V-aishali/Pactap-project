@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+}
+
+.sliderImage {
+    padding: 25px 20px;
+}
+
+.sliderContent {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderContent img {
+    width: 100%;
+    height: 100%;
+}
+
+.bgColor {
+    
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.innerContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 100%;
+    padding: 25px;
+}
+
+.innerContent h3 {
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: 18px;   
+}
+
+.innerContent p {
+    font-size: 14px;
+}
