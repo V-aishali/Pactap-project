@@ -1,36 +1,184 @@
-*{
-    margin: 0px;
-}
-
 .headerWrapper {
-    position: absolute;
-    top: 6%;
-    width: 100%;
-}
-
-.example-spacer {
-    flex: 1 1 auto;
-}
-
-.headerLogo {
-  display: flex;
-  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 6%;
 }
 
 .headerToolbar {
-    background-color: transparent;
-    padding: 0px 50px;
-    /* position: fixed; */
-    z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 0px 50px;
+}
+
+.headerLogo img {
+  height: 40px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
 }
 
 .headerTabList {
-    display: flex;
-    gap: 10px;
-}
-.headerTabList a {
-    text-decoration: none;
-    font-size: 14px;
-    color: #fff;
+  display: flex;
+  gap: 10px;
+  color: #fff;
 }
 
+.toggleButton {
+  display: none;
+}
+
+.sidenav {
+  width: 250px;
+}
+
+
+/* Responsive CSS */
+
+@media (max-width: 959px) {
+  .headerTabList {
+    display: none;
+  }
+
+  .toggleButton {
+    display: inline-flex;
+  }
+
+  .sidenav {
+    display: block;
+  }
+
+  mat-sidenav-container.mat-drawer-container.mat-sidenav-container.example-container.mat-drawer-transition.mat-drawer-container-has-open {
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    display: contents;
+  }
+
+  .ng-tns-c42-0 {
+    height: 100%;
+    min-height: 150px;
+  }
+
+  mat-icon.mat-icon.notranslate.material-icons.mat-icon-no-color {
+    color: #fff;
+  }
+
+  mat-icon.mat-icon.notranslate.closeIcon.material-icons.mat-icon-no-color {
+    color: #000;
+  }
+}
+
+@media (min-width: 960px) {
+  .sidenav {
+    display: none;
+  }
+
+  mat-icon.mat-icon.notranslate.material-icons.mat-icon-no-color {
+    color: #fff;
+  }
+
+  mat-sidenav-container.mat-drawer-container.mat-sidenav-container.example-container.mat-drawer-transition.mat-drawer-container-has-open {
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    display: contents;
+  }
+
+  .ng-tns-c42-0 {
+    height: 100%;
+    min-height: 150px;
+  }
+
+  mat-icon.mat-icon.notranslate.closeIcon.material-icons.mat-icon-no-color {
+    color: #000;
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1080px) {
+  mat-sidenav-container.mat-drawer-container.mat-sidenav-container.example-container.mat-drawer-transition.mat-drawer-container-has-open {
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    display: contents;
+  }
+
+  .ng-tns-c42-0 {
+    height: 100%;
+    min-height: 150px;
+  }
+
+  mat-icon.mat-icon.notranslate.closeIcon.material-icons.mat-icon-no-color {
+    color: #000;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+  mat-sidenav-container.mat-drawer-container.mat-sidenav-container.example-container.mat-drawer-transition.mat-drawer-container-has-open {
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    display: contents;
+  }
+
+  .ng-tns-c42-0 {
+    height: 100%;
+    min-height: 150px;
+  }
+
+  mat-icon.mat-icon.notranslate.closeIcon.material-icons.mat-icon-no-color {
+    color: #000;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 766px) {
+  mat-sidenav-container.mat-drawer-container.mat-sidenav-container.example-container.mat-drawer-transition.mat-drawer-container-has-open {
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    display: contents;
+  }
+
+  .ng-tns-c42-0 {
+    height: 100%;
+    min-height: 150px;
+  }
+
+  mat-icon.mat-icon.notranslate.closeIcon.material-icons.mat-icon-no-color {
+    color: #000;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .headerWrapper {
+    top: 4%;
+  }
+
+  .headerToolbar {
+    padding: 0px 20px;
+  }
+
+  .bannerContent h1 {
+    font-size: 20px !important;
+    margin-bottom: 0px !important;
+  }
+
+  mat-sidenav-container.mat-drawer-container.mat-sidenav-container.example-container.mat-drawer-transition.mat-drawer-container-has-open {
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    display: contents;
+  }
+
+  .ng-tns-c42-0 {
+    height: 100%;
+    min-height: 150px;
+  }
+
+  mat-icon.mat-icon.notranslate.closeIcon.material-icons.mat-icon-no-color {
+    color: #000;
+  }
+}

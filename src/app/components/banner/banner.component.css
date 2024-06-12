@@ -34,3 +34,28 @@
     color: #fff;
     font-size: 13px;
 }
+
+/* Responsive CSS */
+@media (min-width: 575px) and (max-width: 766px) {
+    .bannerContent h1 {
+        font-size: 36px !important;
+        margin-bottom: 0px !important;
+    }
+    .bannerContent p{
+        font-size: 14px;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 574px)  {
+    .bannerContent {
+        gap: 0px;
+    }
+    .bannerContent h1 {
+        font-size: 20px !important;
+        margin-bottom: 0px !important;
+    }
+    .bannerContent p{
+        font-size: 10px;
+    }
+  }

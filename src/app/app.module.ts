@@ -17,6 +17,8 @@ import { SliderImageComponent } from './components/slider-image/slider-image.com
 import { AboutPageComponent } from './components/about-page/about-page.component';
 import { CardioPageComponent } from './components/cardio-page/cardio-page.component';
 import { GalleryPageComponent } from './components/gallery-page/gallery-page.component';
+import { MerchandisePageComponent } from './components/merchandise-page/merchandise-page.component';
+import { FooterPageComponent } from './components/footer-page/footer-page.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { GalleryPageComponent } from './components/gallery-page/gallery-page.com
     SliderImageComponent,
     AboutPageComponent,
     CardioPageComponent,
-    GalleryPageComponent
+    GalleryPageComponent,
+    MerchandisePageComponent,
+    FooterPageComponent
   ],
   imports: [
     BrowserModule,

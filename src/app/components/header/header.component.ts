@@ -8,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   navLinks = [
-    { path: '', label: 'Home' },
-    { path: 'about', label: 'About us' },
-    { path: 'personal training', label: 'Personal Training' },
-    { path: 'classes', label: 'Classes' },
-    { path: 'merchandise', label: 'Merchandise' },
-    { path: 'testimonials', label: 'Testimonials' },
-    { path: 'gallery', label: 'Gallery' },
-    { path: 'conatct us', label: 'Conatct us' }
+    { path: '/home', label: 'Home' },
+    { path: '/about', label: 'About us' },
+    { path: '/personal-training', label: 'Personal Training' },
+    { path: '/classes', label: 'Classes' },
+    { path: '/merchandise', label: 'Merchandise' },
+    { path: '/testimonials', label: 'Testimonials' },
+    { path: '/gallery', label: 'Gallery' },
+    { path: '/contact', label: 'Contact us' }
   ];
   constructor() { }
 

@@ -1,0 +1,19 @@
+<div class="merchandiseWrapper">
+    <div class="merchandiseInner">
+        <span></span>
+        <h1>MERCHANDISE</h1>
+        <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati doloremque id
+            explicabo veniam nam ducimus quam quasi.</P>
+    </div>
+    <div class="merchandiseSection">
+        <div class="row">
+            <div class="col-lg-3 col-md-3" *ngFor="let mechandise of merchandises">
+                <div class="merchandiseImage">
+                    <img src="{{mechandise.productImage}}" alt="">
+                    <h4>{{mechandise.productName}}</h4>
+                    <strong>&euro; {{mechandise.productPrice}}</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

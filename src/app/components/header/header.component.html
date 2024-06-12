@@ -1,87 +1,34 @@
+
 <div class="headerWrapper">
-
-        <mat-toolbar class="headerToolbar">
-      
-            <div class="headerLogo">
-                <img src="assets/img/lg.png" alt="">
-            </div>
-      
-          <span class="example-spacer"></span>
-      
-          <div fxShow="true" fxHide.lt-md="true" class="headerTabList">
-      
-            <a href="#" mat-button class="" *ngFor="let link of navLinks" [routerLink]="link.path">
-              {{ link.label }}
-            </a>
-      
-          </div>
-      
-          <!-- <div fxShow="true" fxHide.gt-sm="true">
-      
-            <a href="#" (click)="sidenav.toggle()">Show Side Menu</a>
-      
-          </div> -->
-      
-        </mat-toolbar>
-      
-        <!-- <mat-sidenav-container fxFlexFill class="example-container">
-      
-          <mat-sidenav #sidenav fxLayout="column">
-      
-            <div fxLayout="column">
-      
-              <a (click)="sidenav.toggle()" href="#" mat-button>Close</a>
-      
-              <a href="#" mat-button>Home</a>
-      
-              <a href="#" mat-button>About us</a>
-      
-              <a href="#" mat-button>Personal Training</a>
-      
-              <a href="#" mat-button>Classes</a>
-      
-              <a href="#" mat-button>Merchandise</a>
-      
-              <a href="#" mat-button>Testimonials</a>
-
-              <a href="#" mat-button>Gallery</a>
-
-              <a href="#" mat-button>Contact us</a>
-      
-            </div>
-      
-          </mat-sidenav>
-      
-          <mat-sidenav-content fxFlexFill>Main content</mat-sidenav-content>
-      
-        </mat-sidenav-container> -->
-  
-</div>
-
-<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#">Hidden brand</a>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+  <mat-toolbar class="headerToolbar">
+    <div class="headerLogo">
+      <img src="assets/img/lg.png" alt="Logo">
     </div>
-  </div>
-</nav> -->
+    <span class="example-spacer"></span>
+    <div class="headerTabList">
+      <a href="#" mat-button *ngFor="let link of navLinks" [routerLink]="link.path">
+        {{ link.label }}
+      </a>
+    </div>
+    <button mat-icon-button class="toggleButton" (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar>
+  <mat-sidenav-container fxFlexFill class="example-container">
+    <mat-sidenav #sidenav mode="over" class="sidenav">
+      <div fxLayout="column">
+        <!-- <a (click)="sidenav.close()" href="#" mat-button>Close</a> -->
+        <mat-icon (click)="sidenav.close()" class="closeIcon">clear</mat-icon>
+        <a href="#" mat-button *ngFor="let link of navLinks" [routerLink]="link.path">
+          {{ link.label }}
+        </a>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+      <!-- Main content goes here -->
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
 
 

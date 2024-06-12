@@ -2,7 +2,8 @@
     margin: 0px;
 }
 
-.galleryWrapper {
+.merchandiseWrapper {
+    text-align: center;
     text-align: center;
     width: 100%;
     max-width: 1200px;
@@ -10,7 +11,11 @@
     padding: 40px 0px;
 }
 
-.galleryInner {
+.merchandiseSection {
+    padding: 0px 20px;
+}
+
+.merchandiseInner {
     text-align: center;
     padding: 0px 20px 0px;
     width: 100%;
@@ -18,7 +23,7 @@
     margin: 0 auto;
 }
 
-.galleryInner span {
+.merchandiseInner span {
     background-color: #faa71b;
     width: 50px;
     height: 4px;
@@ -28,56 +33,57 @@
     margin: 0 auto 25px;
 }
 
-.galleryInner h1 {
+.merchandiseInner h1 {
     color: black;
     font-weight: 600;
     font-size: 25px;
     margin-bottom: 10px;
 }
 
-.galleryInner p {
+.merchandiseInner p {
     color: #828282;
     font-size: 14px;
     line-height: 25px;
     margin-bottom: 10px;
 }
 
-.gallerySection {
+.merchandiseInner {
     padding: 20px;
 }
-
-.galleryImage {
-    margin-bottom: 20px;
-}
-
-.galleryImage img {
+.merchandiseImage img {
     width: 100%;
+    border: 1px solid #c9c9c9;
     border-radius: 3px;
+    margin-bottom: 10px;
 }
 
-.filledButton {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #faa71b;
-    border: 2px solid #faa71b;
-    color: #fff;
-    padding: 10px;
-    width: 100%;
-    max-width: 140px;
-    border-radius: 50px;
-    font-size: 14px;
+.merchandiseImage h4 {
+    color: black;
     font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 16px;
 }
 
+.merchandiseImage strong {
+    color: #faa71b;
+    font-weight: 500;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
 
 /* Responsive CSS */
-@media (min-width: 767px) and (max-width: 960px) {
-}
-
 @media (min-width: 575px) and (max-width: 766px) {
+    .row {
+        display: grid;
+        gap: 15px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
+    .row {
+        display: grid;
+        gap: 15px;
+    }
     .galleryImage img {
         width: 100%;
     }

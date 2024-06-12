@@ -7,39 +7,19 @@
     </div>
     <div class="gallerySection">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-4" *ngFor="let image of galleryImage">
                 <div class="galleryImage">
-                    <img src="assets/img/img-1.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="galleryImage">
-                    <img src="assets/img/img-2.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="galleryImage">
-                    <img src="assets/img/img-3.jpg" alt="">
+                    <img src="{{image.galleyImage}}" alt="">
                 </div>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-md-4">
+        <!-- <div class="row mt-4">
+            <div class="col-lg-4 col-md-4" *ngFor="let image of galleryImage">
                 <div class="galleryImage">
-                    <img src="assets/img/img-4.jpg" alt="">
+                    <img src="{{image.galleyImage}}" alt="">
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="galleryImage">
-                    <img src="assets/img/img-5.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="galleryImage">
-                    <img src="assets/img/img-6.jpg" alt="">
-                </div>
-            </div>
-        </div>
+        </div> -->
     </div>
 
     <button class="filledButton">VIEW ALL</button>

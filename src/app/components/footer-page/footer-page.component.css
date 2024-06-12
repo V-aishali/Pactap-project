@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+}
+
+.footerWrapper {
+    text-align: center;
+    background-color: #202020;
+    padding: 20px 0px;
+}
+.footerWrapper p {
+    margin-bottom: 0px;
+    color: #969696;
+    font-size: 14px;
+}
+
+/* Responsive CSS */
+@media (min-width: 320px) and (max-width: 575px) {
+    .footerWrapper p {
+        font-size: 10px;
+    }
+}
